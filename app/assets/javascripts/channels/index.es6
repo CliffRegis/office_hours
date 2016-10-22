@@ -1,5 +1,5 @@
-
 var App ={}
 
-  App.cable = Cable.createConsumer('ws://localhost:3000');
+  App.cable = ActionCable.createConsumer('ws://localhost:3000');
 
+ 
