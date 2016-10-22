@@ -1,11 +1,11 @@
 var CommentList = React.createClass({
   getInitialState(){
-    let message = JSON.parse(this.props.message);
-    return {message: message};
+    let video = JSON.parse(this.props.video);
+    return {video: video};
   },
 
   render() {
-    let comments = this.state.message.comments.map((comment) => {
+    let comments = this.state.video.comments.map((comment) => {
       return this.renderComment(comment);
     });
 
